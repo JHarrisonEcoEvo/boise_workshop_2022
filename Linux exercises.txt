@@ -1,0 +1,18 @@
+﻿1. Navigate to the root of your computer and see what stuff is there. 
+2. Use touch to make a new file in your working directory. Lets call it “newfile.txt”
+3. Use nano to open up newfile.txt and add some text to it. Try “Hello World!” Save and close newfile.txt, using nano. 
+4. Look at the contents of newfile.txt using cat and again with less and again with head.
+5. Make a new directory. Call it whatever you like.
+6. Move newfile.txt into the new directory you just made. 
+7. Copy newfile.txt. Call the copy whatever you like.
+8. Change the name of newfile.txt to something cooler.
+9. Use cat to concatenate these two files and assign the output of cat to a new file. 
+10. Delete the two original files, but not the new one that you just made in step 10. Be careful when removing files. Once deleted they are gone. No recycle bin/trash. 
+11. Spend some time moving around on your computer to get used to navigating. Use pwd and ls to see where you are.
+12. Make a new file somewhere different from your working directory using a relative path, and then again using an absolute path. Check your work via navigation and using ls
+13. zip and unzip a file
+14. Make tarball and then open it. Or, swing over to https://sourceforge.net/projects/bio-bwa/files/ and download a bwa tarball and open it. bwa is an aligner that gets used often. This will give you some insight into how software is downloaded and installed. 
+15. (optional) try installing bwa using make. Look at the readme for help. 
+16. Open up your shell profile and find your $PATH.
+17. Use chmod to change the permissions of the test file you made earlier. Make it so that nobody but you can read it and then make it so that everyone can read, write, and execute it.
+18. If you are feeling good, open up a text editor and make a simple shell program that prints hello world 10 times via a loop. Execute the program via bash. We are intentionally not telling you everything here so you will google some and get a feel for what it is like trying to figure out answers. Please ask if you get stuck though!
