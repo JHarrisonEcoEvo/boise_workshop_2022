@@ -1,0 +1,16 @@
+﻿1. See if git is installed on your computer. Go to the shell interpreter and type “which git” or “git --version” (the former tells you where git is located, the latter tells the version)
+2. If not, then install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+3. Once installed, navigate to a directory that you want version controlled and type “git init”.
+4. Make a new file, use git add, commit, and push to initiate version control of that file. If you get stuck see this good post: https://kbroman.org/github_tutorial/pages/init.html
+5. Go ahead and add other things in the repo that you want to track. Remember you can use file glob patterns to do this. But watch out for hidden dot files. On a mac you probably don’t want to commit “.DS_Store” for instance. This file is hidden and tells the computer how to represent the folder contents in graphical windows…it changes a lot and can cause merge conflicts. 
+6. EXTRA: Make a git ignore file that specifies that .DS_Store (or some other files) should not be tracked via git. Do some googling to figure out how to do this and ask us for help. 
+7. Go over to Karl Broman’s useful intro page and look around. This is a good resource to remember: https://kbroman.org/github_tutorial/
+8. Go to github and clone a repo. Maybe find Sean’s Qiime repo and clone that. 
+9. Now change one of the files in this repo (consider using nano to quickly make a change). Commit the change, but do not attempt to push it (if you don’t own the remote repo you won’t be able to anyway). 
+10. Type git status to see what has happened in your repo. This is a nice thing to do when visiting a repo that you haven’t opened in awhile, just to see what is up. 
+11. Try pulling again from the remote repo, what happens? 
+12. Try resolving this using stash. 
+13. Use checkout to make a new branch. 
+14. EXTRA: make some changes, like adding a new file, in the new branch, then merge it back into the old branch. For help see: https://www.varonis.com/blog/git-branching#:~:text=To%20merge%20branches%20locally%2C%20use,branch%20into%20the%20main%20branch.
+15. EXTRA: if you don’t have a github profile, make one and upload the repo you made earlier to Github. See this post for help: https://medium.com/swlh/using-git-how-to-add-a-repo-to-track-an-existing-project-a05093f76396
+16. EXTRA: try making a markdown file using either R markdown (R studio is a good way to do this) or Jupyter notebooks. We can help if you don’t know how to do this.
