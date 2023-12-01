@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 # Introduction
-So, sklearn is a pretty cool Python package for doing machine learning. However, the tidymodels library for R seems like it may be a contender for the throne. It seems to offer similarly convenient tools for feature engineering and various data preprocessing, but relies on the tidyverse ease-of-use-aesthetic. Moreover, from what I can gather, R is a bit easier to make graphics in compared to Python (matplotlib) so staying within the R environment instead of moving from Python to R and back seems convenient. Also, Rstudio is a way better IDE than anything Python has on offer, in my opinion. Finally, I suspect saving model objects may be a bit better with tidymodels than in python. Lets find out!
+So, sklearn is a pretty cool Python package for doing machine learning. However, the tidymodels library for R seems like it may be a nice alternative if one wants to stay in R. It seems to offer similarly convenient tools for feature engineering and various data preprocessing, but relies on the tidyverse ease-of-use-aesthetic.
 
 As an aside, tidymodels has some really good documentation. Kudos to them for making software docs that are actually enjoyable to read and easy to understand.
 
@@ -99,7 +99,7 @@ summary(phyllo_recipe)
 ```
 Note the column for 'role' this holds info about what the feature is for. Predictor and outcome are the critical ones, but we can add any roles we want. Roles aside from the predictor and outcome roles are just strings defined by the user for the user. There isn't a long list of roles to memorize, the only ones that do anything are predictor and outcome. 
 
-The help docs demonstrate a useful example where they specify an "ID" role. Thus a variable that contains sample info can be retained in the dataset, but not included as a predictor. This is handy because sub-setting data to remove identifiers and then putting them back in can lead to critically damning errors if one gets anything out of order. I like that one can sidestep that whole issue by just designating roles up front. Note, from my reading I do not think sklearn has anything analogous to this and I think this handy organization could be a nice time saver and a way to avoid fragility imposed via lots of indexing and splitting/merging of data.
+The help docs demonstrate a useful example where they specify an "ID" role. Thus a variable that contains sample info can be retained in the dataset, but not included as a predictor. This is handy because sub-setting data to remove identifiers and then putting them back in can lead to critically damning errors if one gets anything out of order. I like that one can sidestep that whole issue by just designating roles up front. Note, from my reading I do not think sklearn has anything analogous to this (as of 2021) and I think this handy organization could be a nice time saver and a way to avoid fragility imposed via lots of indexing and splitting/merging of data.
 ```{r}
 #adding some roles
 phyllo_recipe <- 
